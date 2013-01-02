@@ -1,0 +1,24 @@
+//less
+
+.round-corners (@radius: 5px) {
+  border-radius: @radius;
+}
+
+header {
+  h1 {
+    a {
+      border: 1px solid #000;
+    }
+  }
+  
+  p {
+    a {
+      .round-corners(2px);
+      &:hover { .round-corners(4px);}
+    }
+  }
+  
+  a {
+    font-size: 14px;
+  }
+}

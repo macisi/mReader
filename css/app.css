@@ -1,0 +1,12 @@
+header h1 a {
+  border: 1px solid #000;
+}
+header p a {
+  border-radius: 2px;
+}
+header p a:hover {
+  border-radius: 4px;
+}
+header a {
+  font-size: 14px;
+}
