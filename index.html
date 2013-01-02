@@ -6,12 +6,18 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+<div ng-controller="Search">
+    <input type="search" ng-model="keyword" required><button ng-click="fetch()">搜索源</button>
+    <p>{{keyword}}</p>
+</div>
 <ul class="menu">
     <li><a href="#/view1">view1</a></li>
     <li><a href="#/view2">view2</a></li>
 </ul>
 
-<div ng-view></div>
+<ng-view>
+
+</ng-view>
 
 <div>Angular seed app: v<span app-version></span></div>
 <script src="https://www.google.com/jsapi"></script>
