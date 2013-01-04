@@ -28,9 +28,22 @@
     <li>
         <h4><a href="{{url}}">{{{title}}}</a></h4>
         <p>{{{contentSnippet}}}</p>
+        <button>添加订阅</button>
     </li>
     {{/each}}
 </ul>
+</script>
+<script type="text/x-handlebars-template" id="feedContent-tpl">
+<h3>{{title}}</h3>
+<p>{{author}}</p>
+<p>{{description}}</p>
+{{#each entries}}
+<article>
+    <h4><a href="{{link}}" target="_blank">{{title}}</a></h4>
+    <section>{{{content}}}</section>
+    <section>{{publishedDate}}</section>
+</article>
+{{/each}}
 </script>
 </body>
 </html>
